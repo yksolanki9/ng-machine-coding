@@ -1,1 +1,5 @@
-<app-star-rating></app-star-rating>
+<form [formGroup]="ratingsForm">
+  <app-star-rating formControlName="rating"></app-star-rating>
+  <p *ngIf="ratingsForm.controls['rating'].touched && !ratingsForm.controls['rating'].valid">Please select a rating</p>
+  <button (click)="saveForm()" type="submit">Submit Form</button>
+</form>

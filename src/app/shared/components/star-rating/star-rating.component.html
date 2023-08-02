@@ -1,7 +1,7 @@
 <div class="align-center">
   <div>Select a rating:</div>
   <div class="stars">
-    <div (click)="starSelected(i)" class="star" [ngClass]="{'highlight-star': i <= selectedRating}" *ngFor="let star of stars; let i = index">
+    <div (click)="starSelected(i + 1)" class="star" [ngClass]="{'highlight-star': selectedRating && i < selectedRating}" *ngFor="let star of stars; let i = index">
       {{i + 1}}
     </div>
   </div>
