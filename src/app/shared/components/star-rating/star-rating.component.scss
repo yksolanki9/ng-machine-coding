@@ -1,0 +1,26 @@
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.star {
+  padding: 8px 12px;
+  margin: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: lightblue;
+  }
+}
+
+.highlight-star {
+  background-color: yellow;
+}
